@@ -3,10 +3,10 @@ namespace XadrezConsole.Tabuleiro
 {
     class Peca
     {
-        public Posicao posicao { get; set; }
-        public Cor cor { get; protected set; }
-        public int qteMovimentos { get; protected set; }
-        public TabuleiroClasse tab { get; protected set; }
+        public Posicao Posicao { get; set; }
+        public Cor Cor { get; protected set; }
+        public int QteMovimentos { get; protected set; }
+        public TabuleiroClasse Tab { get; protected set; }
 
         public Peca()
         {
@@ -14,10 +14,10 @@ namespace XadrezConsole.Tabuleiro
 
         public Peca(Posicao posicao, Cor cor,TabuleiroClasse tab)
         {
-            this.posicao = posicao;
-            this.cor = cor;
-            this.qteMovimentos = 0;
-            this.tab = tab;
+            Posicao = posicao;
+            Cor = cor;
+            QteMovimentos = 0;
+            Tab = tab;
         }
     }
 }
