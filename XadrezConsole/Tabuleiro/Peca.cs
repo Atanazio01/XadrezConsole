@@ -12,9 +12,9 @@ namespace XadrezConsole.Tabuleiro
         {
         }
 
-        public Peca(Posicao posicao, Cor cor,TabuleiroClasse tab)
+        public Peca(Cor cor,TabuleiroClasse tab)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             QteMovimentos = 0;
             Tab = tab;

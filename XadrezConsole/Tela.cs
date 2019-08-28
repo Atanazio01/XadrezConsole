@@ -10,6 +10,7 @@ namespace XadrezConsole
             {
                 for (int j = 0; j < tab.Colunas; j++)
                 {
+                    
                     if (tab.PecaTab(i, j) == null)
                     {
                         Console.Write("- ");
@@ -19,7 +20,6 @@ namespace XadrezConsole
                         Console.Write(tab.PecaTab(i, j) + " ");
                     }
                 }
-
                 Console.WriteLine();
             }
         }
