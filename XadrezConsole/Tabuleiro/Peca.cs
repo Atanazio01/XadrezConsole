@@ -1,7 +1,7 @@
 ﻿using XadrezConsole.Tabuleiro.Enums;
 namespace XadrezConsole.Tabuleiro
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
@@ -15,14 +15,12 @@ namespace XadrezConsole.Tabuleiro
         public Peca(Cor cor,TabuleiroClasse tab)
         {
             Posicao = null;
+            Tab = tab;
             Cor = cor;
             QteMovimentos = 0;
-            Tab = tab;
         }
 
-        public void IncrementarQteMovimentos()
-        {
-            QteMovimentos++;
-        }
+        public abstract bool[,] MovimentosPossiveis();
+
     }
 }
