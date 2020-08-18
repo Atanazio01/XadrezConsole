@@ -5,7 +5,7 @@ Mostra o momento de cada um jogar
 Peças pretas e brancas.
 Projeto simplificado, feito para console sem interface robusta.
 
-#Linguagem/skills
+# Linguagem/skills
 CSharp com POO
 Enumerações
 Classes
